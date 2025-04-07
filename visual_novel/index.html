@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title i18n="visual_novel_page_title">Visual Novel - Hanjo Mei's Cyber Crib</title>
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src="other_scripts_blyat/jquery-min.js"></script>
+<script src="other_scripts_blyat/jquery.i18n.js"></script>
+
+<body>
+  <div class="header">
+    <h1 id="terminalEffect"
+      style="text-align: left; margin-left: 20px; transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></h1>
+  </div>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main-content" id="mainContent">
+    <div class="card" id="home">
+      <h2 i18n="visual_novel">Visual Novel</h2>
+      <p i18n="visual_novel_description">A attempt of writing my own story.</p>
+      <div class="project-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+        
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="visual_novel_1">Demo</h3>
+          <p i18n="visual_novel_1_description">It's just a demo!</p>
+          <a class="button no-underline" href="visual_novel/demo" target="_blank">
+              <span i18n="launch_button">Launch</span> <i class="material-icons">send</i>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="floating-button"></div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

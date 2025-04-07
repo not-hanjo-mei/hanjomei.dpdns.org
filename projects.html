@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title i18n="projects_page_title">Projects - Hanjo Mei's Cyber Crib</title>
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src="other_scripts_blyat/jquery-min.js"></script>
+<script src="other_scripts_blyat/jquery.i18n.js"></script>
+
+<body>
+  <div class="header">
+    <h1 id="terminalEffect"
+      style="text-align: left; margin-left: 20px; transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></h1>
+  </div>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main-content" id="mainContent">
+    <div class="card" id="home">
+      <h2 i18n="recent_projects">Recent Projects</h2>
+      <p i18n="recent_projects_description">Here are some of my recent works and experiments:</p>
+      <div class="project-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+        
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_6">YARTAT - Yet Another REALITY Auto Translation</h3>
+          <p i18n="project_6_description">A powerful real-time translation tool for REALITY app, supporting multiple translation engines and featuring a text-based user interface.</p>
+          <a class="button no-underline" href="https://github.com/not_hanjo_mei/YARTAT"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="view_github">View on GitHub</a>
+        </div>
+        
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_5">YAH Mei, a friendly REALITY chatbot</h3>
+          <p i18n="project_5_description">The digital presence of YAH Mei, a friendly REALITY chatbot created by Hanjo Mei.</p>
+          <a class="button no-underline" href="https://yahmei.hanjomei.dpdns.org/"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="view_website">View Website</a>
+        </div>
+
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_1">Personal portfolio website</h3>
+          <p i18n="project_1_description">You're looking at it! 👀</p>
+          <a class="button no-underline" href="index.html"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="view_website">View Website</a>
+        </div>
+
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_4">Visual Novel</h3>
+          <p i18n="project_4_description">A attempt of writing my own story.</p>
+          <a class="button no-underline" href="visual_novel/index.html"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="check_it_out">Check it Out!</a>
+        </div>
+
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_2">Inochi 2D model</h3>
+          <p i18n="project_2_description">Who needs 3D models when you can have 2D models? 😎</p>
+          <a class="button no-underline" onclick="showTooltip(this, 'Coming soon!')"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="learn_more">Learn More</a>
+        </div>
+
+        <div class="project-card"
+          style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
+          <h3 i18n="project_3">My YouTube Channel</h3>
+          <p i18n="project_3_description">A collection of videos showcasing my random doodads. ✌︎(ツ)ɔ</p>
+          <a class="button no-underline" href="https://www.youtube.com/@hanjo_mei_reality"
+            style="display: inline-block; margin-top: 0.5rem;" i18n="watch_videos">Watch Videos</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="floating-button"></div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title i18n="donate_page_title">Donate - Hanjo Mei's Cyber Crib</title>
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src="other_scripts_blyat/jquery-min.js"></script>
+<script src="other_scripts_blyat/jquery.i18n.js"></script>
+
+<body>
+  <div class="header">
+    <h1 id="terminalEffect"
+      style="text-align: left; margin-left: 20px; transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></h1>
+  </div>
+
+  <!-- Sidebar (optional, can be loaded dynamically) -->
+  <div class="sidebar" id="sidebar">
+    <!-- Sidebar content can go here (loaded dynamically) -->
+  </div>
+
+  <!-- Main Content for Donations -->
+  <div class="main-content" id="mainContent">
+    <div class="card" id="donation-options">
+      <h1 i18n="donate_with_crypto">Donate with Cryptocurrency</h1>
+      <p i18n="donate_with_crypto_description">Thank you for supporting me! You can donate using the following
+        cryptocurrencies:</p>
+
+      <div class="card" id="monero">
+        <h2 i18n="monero">Monero (XMR)</h2>
+        <p i18n="send_monero">Send Monero to the following address:</p>
+        <div style="display: flex; flex-direction: row; word-wrap: break-word; white-space: pre-wrap;">
+          <p style="word-break: break-word; white-space: pre-wrap; margin: 0;">
+            4Ac2C1pAgHWiwKA2WW4HsPgd9keZfYbM9QxPWrHxiru2ftsSUDrb7NA3e3NyrAytfQYxCqLhayu3Chc5TymVerimJJqwdjh
+          </p>
+        </div>
+
+        <a class="button no-underline" href="javascript:void(0);"
+          onclick="copyToClipboard('4Ac2C1pAgHWiwKA2WW4HsPgd9keZfYbM9QxPWrHxiru2ftsSUDrb7NA3e3NyrAytfQYxCqLhayu3Chc5TymVerimJJqwdjh')">
+          <span i18n="copy_address">Copy Address</span> <i class="material-icons">content_copy</i>
+
+          <!-- Same Style Button for Show QR Code -->
+          <a class="button no-underline" href="javascript:void(0);" onclick="showQRCode('monero.webp', 'monero-qr')">
+            <span i18n="show_qr_code">Show QR Code</span> <i class="material-icons">qr_code</i>
+          </a>
+          <!-- QR Code Container for Monero (Initially Hidden) -->
+          <div id="monero-qr" class="qr-code-container" style="display:none;"></div>
+      </div>
+
+      <div class="card" id="veruscoin">
+        <h2 i18n="veruscoin">Verus (VRSC)</h2>
+        <p i18n="send_veruscoin">Send Verus to the following address:</p>
+        <div style="display: flex; flex-direction: row; word-wrap: break-word; white-space: pre-wrap;">
+          <p style="word-break: break-word; white-space: pre-wrap; margin: 0;">
+            R9NXeJM4WACyTakLJpGPZPobYWkPLhMzHh
+          </p>
+        </div>
+
+        <a class="button no-underline" href="javascript:void(0);"
+          onclick="copyToClipboard('R9NXeJM4WACyTakLJpGPZPobYWkPLhMzHh')">
+          <span i18n="copy_address">Copy Address</span> <i class="material-icons">content_copy</i>
+        </a>
+
+        <a class="button no-underline" href="javascript:void(0);" onclick="showQRCode('veruscoin.webp', 'veruscoin-qr')">
+          <span i18n="show_qr_code">Show QR Code</span> <i class="material-icons">qr_code</i>
+        </a>
+
+        <!-- QR Code Container for VerusCoin (Initially Hidden) -->
+        <div id="veruscoin-qr" class="qr-code-container" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="floating-button"></div>
+
+  <script src="scripts.js"></script>
+
+  <script>
+    // Function to copy cryptocurrency address to clipboard
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Address copied to clipboard!');
+      }).catch(err => {
+        console.error('Error copying text: ', err);
+      });
+    }
+
+    function showQRCode(qrFile, elementId) {
+      const qrCodeContainer = document.getElementById(elementId);
+      if (!qrCodeContainer) {
+        console.error(`QR Code container with ID ${elementId} not found`);
+        return;
+      }
+
+      qrCodeContainer.innerHTML = ''; // Clear any existing QR code
+
+      const img = document.createElement('img');
+      img.src = `images/${qrFile}`; // Adjust the path to your webp files
+      img.alt = "QR Code";
+
+      // Make the image responsive: set width to 100% of the container's width, height adjusts automatically
+      img.style.width = '100%'; // Take up 100% of the container's width
+      img.style.height = 'auto'; // Maintain aspect ratio by adjusting height
+
+      // Limit the maximum size of the image to 400x400px
+      img.style.maxWidth = '400px';  // Maximum width
+      img.style.maxHeight = '400px'; // Maximum height
+
+      qrCodeContainer.appendChild(img);
+
+      // Show the QR code container
+      qrCodeContainer.style.display = 'block';
+    }
+
+  </script>
+</body>
+
+</html>

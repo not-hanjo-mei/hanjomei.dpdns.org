@@ -1,0 +1,61 @@
+<div class="sidebar-content">
+  <div class="sidebar-header">
+    <img src="images/avatar.webp" alt="Hanjo Mei's avatar" class="sidebar-avatar"
+      style="width: 60px; height: 60px; margin: 0 auto 0.7rem; display: block;">
+    <h2
+      style="text-align: center; margin-bottom: 1.2rem; font-size: 1.3rem; word-wrap: break-word; white-space: normal;"
+      i18n="hanjo_mei_s_cyber_crib">Hanjo Mei's Cyber Crib</h2>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html" class="sidebar-item active"
+      style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+      <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">home</i>
+      <span style="font-size: 0.9rem;" i18n="home">Home</span>
+    </a>
+    <a href="about_me.html" class="sidebar-item"
+      style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+      <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">person</i>
+      <span style="font-size: 0.9rem;" i18n="about">About</span>
+    </a>
+    <a href="projects.html" class="sidebar-item"
+      style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+      <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">work</i>
+      <span style="font-size: 0.9rem;" i18n="projects">Projects</span>
+    </a>
+    <a href="donate.html" class="sidebar-item"
+      style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+      <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">payments</i>
+      <span style="font-size: 0.9rem;" i18n="donate">Donate</span>
+    </a>
+    <a href="contact.html" class="sidebar-item"
+      style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+      <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">mail</i>
+      <span style="font-size: 0.9rem;" i18n="contact">Contact</span>
+    </a>
+    <a href="https://yahmei.hanjomei.dpdns.org/" class="sidebar-item"
+    style="flex-direction: column; align-items: center; text-align: center; padding: 0.35rem;">
+    <i class="material-icons" style="margin-right: 0; margin-bottom: 0.2rem; font-size: 1.3rem;">smart_toy</i>
+    <span style="font-size: 0.9rem;" i18n="yahmei">YAH Mei</span>
+  </a>
+  </nav>
+  <div class="sidebar-footer"
+    style="margin-top: 1.2rem; display: flex; justify-content: center; align-items: center; position: absolute; bottom: 15px; left: 0; right: 0;">
+    <div class="language-toggle"
+      style="display: flex; flex-direction: column; align-items: center; margin-right: 10px;">
+      <select id="languageSwitcher" class="button" aria-label="选择语言">
+        <option value="en-US">English (United States)</option>
+        <option value="ja-JP">日本語（日本）</option>
+        <option value="ru-RU">Русский (Россия)</option>
+        <option value="uk-UA">Українська (Україна)</option>
+        <option value="zh-CN">中文（简体，中国）</option>
+        <option value="zh-TW">中文（繁體，台灣）</option>
+      </select>
+    </div>
+    <div class="dark-mode-toggle" style="display: flex; flex-direction: column; align-items: center;">
+      <button id="darkModeToggle" class="button" onclick="toggleDarkMode()"
+        style="display: flex; width: 36px; height: 36px; border-radius: 50%; padding: 0;">
+        <i class="material-icons" style="font-size: 1.2rem;">brightness_6</i>
+      </button>
+    </div>
+  </div>
+</div>

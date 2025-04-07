@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title i18n="contact_page_title">Contact - Hanjo Mei's Cyber Crib</title>
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src="other_scripts_blyat/jquery-min.js"></script>
+<script src="other_scripts_blyat/jquery.i18n.js"></script>
+
+<body>
+    <div class="header">
+        <h1 id="terminalEffect"
+            style="text-align: left; margin-left: 20px; transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        </h1>
+    </div>
+
+    <!-- Sidebar (optional, can be loaded dynamically) -->
+    <div class="sidebar" id="sidebar">
+        <!-- Sidebar content can go here (loaded dynamically) -->
+    </div>
+
+    <!-- Main Content for Donations -->
+    <div class="main-content" id="mainContent">
+        <div class="card" id="contact">
+            <h2 i18n="get_in_touch">Get in Touch</h2>
+            <p i18n="contact_description">Feel free to reach out to me for collaborations or just to say hi!</p>
+            <p><i class="material-icons">chat</i> <span i18n="discord">Discord: not_hanjo_mei</span></p>
+            <p><i class="material-icons">photo_camera</i> <span i18n="instagram_dm">Instagram DM: @not_hanjo_mei</span>
+            </p>
+            <p><i class="material-icons">email</i> <span i18n="email">Email: hanjomei@hanjomei.dpdns.org</span></p>
+            <a class="button no-underline button-spacing" href="https://www.instagram.com/direct/t/111439353583723/"
+                target="_blank">
+                <span i18n="instagram_direct">Instagram Direct</span> <i class="material-icons">send</i>
+            </a>
+            <a class="button no-underline" href="mailto:hanjomei@hanjomei.dpdns.org" target="_blank">
+                <span i18n="email_button">Email</span> <i class="material-icons">send</i>
+            </a>
+        </div>
+    </div>
+
+    <div id="floating-button"></div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
