@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title i18n="error_404_page_title">404 Not Found - Hanjo Mei's Cyber Crib</title>
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src="other_scripts_blyat/jquery-min.js"></script>
+<script src="other_scripts_blyat/jquery.i18n.js"></script>
+
+<body>
+  <div class="header">
+    <h1 id="terminalEffect"
+      style="text-align: left; margin-left: 20px; transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></h1>
+  </div>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main-content" id="mainContent">
+    <div class="card" id="error">
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 id="error404" style="font-size: 6rem; margin-bottom: 0; color: var(--primary-color); cursor: pointer;">404</h1>
+        <h2 i18n="error_404_title">Page Not Found</h2>
+        <p i18n="error_404_description">Oops! The page you're looking for doesn't exist or has been moved.</p>
+        <div style="margin-top: 2rem;">
+          <a class="button no-underline" href="index.html">
+            <span i18n="back_to_home">Back to Home</span> <i class="material-icons">home</i>
+          </a>
+          <a class="button no-underline" href="javascript:history.back()">
+            <span i18n="go_back">Go Back</span> <i class="material-icons">arrow_back</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hidden terminal container that will be shown when 404 is clicked -->
+    <div id="terminal" style="display: none; margin-top: 2rem;"></div>
+  </div>
+
+  <div id="floating-button"></div>
+
+  <script src="scripts.js"></script>
+  <script src="terminal.js"></script>
+  <script>
+    // Add click event listener to the 404 text to show the terminal
+    document.addEventListener('DOMContentLoaded', function() {
+      const error404 = document.getElementById('error404');
+      const terminalContainer = document.getElementById('terminal');
+      
+      if (error404 && terminalContainer) {
+        error404.addEventListener('click', function() {
+          // Toggle terminal visibility
+          if (terminalContainer.style.display === 'none') {
+            terminalContainer.style.display = 'block';
+            // Initialize terminal if it's not already initialized
+            if (!terminalContainer.querySelector('.terminal-container')) {
+              new Terminal(terminalContainer);
+            }
+          } else {
+            terminalContainer.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
