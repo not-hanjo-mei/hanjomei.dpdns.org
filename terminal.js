@@ -55,7 +55,7 @@ class Terminal {
     // Add Soviet Leninux styling
     this.terminalContainer.style.backgroundColor = '#2b2b2b';
     this.terminalContainer.style.color = '#e0e0e0';
-    this.terminalContainer.style.fontFamily = '"Courier New", monospace';
+    this.terminalContainer.style.fontFamily = "'Cascadia Mono', monospace";
     this.terminalContainer.style.padding = '10px';
     this.terminalContainer.style.borderRadius = '5px';
     this.terminalContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
@@ -84,7 +84,7 @@ class Terminal {
     this.inputElement.style.color = '#e0e0e0';
     this.inputElement.style.border = 'none';
     this.inputElement.style.outline = 'none';
-    this.inputElement.style.fontFamily = '"Courier New", monospace';
+    this.inputElement.style.fontFamily = "'Cascadia Mono', monospace";
     this.inputElement.style.width = 'calc(100% - 100px)';
     
     // Assemble the terminal
