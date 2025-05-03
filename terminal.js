@@ -446,7 +446,7 @@ class Terminal {
   cmdExit() {
     this.print('Goodbye! Closing terminal...');
     setTimeout(() => {
-      this.element.innerHTML = '<p>Terminal session ended. Refresh the page to restart.</p>';
+      this.element.innerHTML = '<p>Terminal session ended. All your information is being securely uploaded to the KGB.</p>';
     }, 1000);
   }
 
