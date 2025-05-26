@@ -1,73 +1,39 @@
 {
   "items": [
     {
-      "id": 1,
-      "title": "New Graphics Card",
-      "description": "RTX 4080 for better gaming and development performance",
-      "priority": "high",
-      "price": "$1200",
-      "link": "https://example.com/gpu",
-      "added_date": "2025-01-15",
-      "fulfilled": false
-    },
-    {
-      "id": 2,
-      "title": "Mechanical Keyboard",
-      "description": "Cherry MX switches for better coding experience",
-      "priority": "medium",
-      "price": "$150",
-      "link": "https://example.com/keyboard",
-      "added_date": "2025-01-20",
-      "fulfilled": false
-    },
-    {
-      "id": 3,
-      "title": "Programming Books",
-      "description": "Clean Code and Design Patterns books",
+      "title": "Nvidia Tesla H100 96GB * 4",
+      "description": "4x Nvidia Tesla H100 for AI training and development.\nYou're not that serious, right?",
       "priority": "low",
-      "price": "$80",
-      "link": "https://example.com/books",
-      "added_date": "2025-01-25",
-      "fulfilled": true
+      "price": "$92,000",
+      "link": "https://www.ebay.com/itm/387319342049",
+      "added_date": "2025-05-27",
+      "fulfilled": false
     },
     {
-      "id": 4,
-      "title": "Monitor Arm",
-      "description": "Dual monitor mounting arm for better workspace",
+      "title": "Lenovo ThinkPad P16s Gen 4",
+      "description": "A powerful laptop for development and daily use.\nHey lenovo, if you make this model, \nthen fucking SELL it worldwide!",
       "priority": "medium",
-      "price": "$120",
-      "link": "https://example.com/monitor-arm",
-      "added_date": "2025-02-01",
+      "price": "$2,400",
+      "link": "https://www.lenovo.com/hk/en/p/laptops/thinkpad/thinkpadp/thinkpad-p16s-gen-4-16-inch-amd-mobile-workstation/21rxcto1wwhk1",
+      "added_date": "2025-05-27",
       "fulfilled": false
     },
     {
-      "id": 5,
-      "title": "Coffee Machine",
-      "description": "Espresso machine for late night coding sessions",
-      "priority": "low",
-      "price": "$300",
-      "link": "https://example.com/coffee",
-      "added_date": "2025-02-10",
-      "fulfilled": false
-    },
-    {
-      "id": 6,
-      "title": "4K Monitor",
-      "description": "32-inch 4K monitor for better productivity",
+      "title": "Be nice to everyone",
+      "description": "Just be nice to everyone, it's not that hard.",
       "priority": "high",
-      "price": "$500",
-      "link": "https://example.com/monitor",
-      "added_date": "2025-03-01",
+      "price": "$0",
+      "link": "",
+      "added_date": "2025-05-27",
       "fulfilled": false
     },
     {
-      "id": 7,
-      "title": "Wireless Headphones",
-      "description": "Noise-cancelling headphones for focus",
+      "title": "Test Item",
+      "description": "This is a test item to check the wishlist functionality.\nFulfilled by... Hanjo Mei ofc!",
       "priority": "medium",
-      "price": "$250",
-      "link": "https://example.com/headphones",
-      "added_date": "2025-03-15",
+      "price": "$69,420",
+      "link": "https://example.com/test-item",
+      "added_date": "69420-04-20",
       "fulfilled": true
     }
   ]
