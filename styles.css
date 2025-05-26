@@ -62,6 +62,22 @@ body.dark-mode {
 .sidebar-content {
     padding: 1rem;
     padding-top: 5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    flex-shrink: 0;
 }
 
 .sidebar-item {
