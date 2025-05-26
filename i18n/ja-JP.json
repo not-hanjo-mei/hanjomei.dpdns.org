@@ -57,12 +57,26 @@
   "project_6": "YARTAT - もう一つのREALITY自動翻訳",
   "project_6_description": "REALITYアプリ用の強力なリアルタイム翻訳ツールで、複数の翻訳エンジンをサポートし、テキストベースのユーザーインターフェースを備えています。",
   "view_github": "GitHubで見る",
-
   "visual_novel_page_title": "視覚小説 - 半条 命のサイバー小屋",
   "visual_novel": "視覚小説",
   "visual_novel_description": "自分の物語を書く試み。",
   "launch_button": "開始",
   "visual_novel_1": "デモ",
-  "visual_novel_1_description": "ただのデモだよ！"
+  "visual_novel_1_description": "ただのデモだよ！",
+  "wishlist": "ウィッシュリスト",
+  "wishlist_page_title": "ウィッシュリスト - 半条 命のサイバー小屋",
+  "wishlist_title": "私のウィッシュリスト",
+  "wishlist_description": "いつか手に入れたいもの",
+  "filter_all": "すべて",
+  "filter_pending": "保留中",
+  "filter_fulfilled": "達成済み",
+  "filter_high_priority": "高優先度",
+  "stat_total": "総アイテム数",
+  "stat_pending": "保留中",
+  "stat_fulfilled": "達成済み",
+  "stat_total_price": "総価格",
+  "stat_high_priority": "高優先度",
+  "no_items_found": "アイテムが見つかりません",
+  "no_items_description": "フィルターを調整してみてください"
 
 }

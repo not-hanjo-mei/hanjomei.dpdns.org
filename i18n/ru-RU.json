@@ -56,13 +56,24 @@
     "project_5_description": "Цифровое присутствие YAH Mei, дружелюбного чат-бота REALITY, созданного Hanjo Mei.",
     "project_6": "YARTAT - Ещё один автоматический переводчик для REALITY",
     "project_6_description": "Мощный инструмент для перевода в реальном времени для приложения REALITY, поддерживающий несколько движков перевода и имеющий текстовый пользовательский интерфейс.",
-    "view_github": "Смотреть на GitHub",
-
-    "visual_novel_page_title": "Визуальные новеллы - Чернобыльский реактор №4 компании Hanjo Mei",
+    "view_github": "Смотреть на GitHub",    "visual_novel_page_title": "Визуальные новеллы - Чернобыльский реактор №4 компании Hanjo Mei",
     "visual_novel": "Визуальные новеллы",
     "visual_novel_description": "Попытка написать свою собственную историю.",
     "launch_button": "Запустить",
     "visual_novel_1": "Демо",
-    "visual_novel_1_description": "Это всего лишь демо-версия!"
+    "visual_novel_1_description": "Это всего лишь демо-версия!",    "wishlist": "Список желаний",
+    "wishlist_page_title": "Список желаний - Чернобыльский реактор №4 компании Hanjo Mei",
+    "wishlist_title": "Мой список желаний",
+    "wishlist_description": "Вещи, которые я надеюсь получить когда-нибудь",
+    "filter_all": "Все",
+    "filter_pending": "В ожидании",
+    "filter_fulfilled": "Выполнено",
+    "filter_high_priority": "Высокий приоритет",    "stat_total": "Всего предметов",
+    "stat_pending": "В ожидании",
+    "stat_fulfilled": "Выполнено",
+    "stat_total_price": "Общая стоимость",
+    "stat_high_priority": "Высокий приоритет",
+    "no_items_found": "Предметы не найдены",
+    "no_items_description": "Попробуйте изменить фильтры"
 }
   

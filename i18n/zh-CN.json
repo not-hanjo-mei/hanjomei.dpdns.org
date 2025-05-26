@@ -58,11 +58,24 @@
   "project_6": "YARTAT - 又一个REALITY自动翻译工具",
   "project_6_description": "一个强大的REALITY应用实时翻译工具，支持多种翻译引擎，并具有基于文本的用户界面。",
   "view_github": "在GitHub上查看",
-
   "visual_novel_page_title": "视觉小说 - 半条命的网络小屋",
   "visual_novel": "视觉小说",
   "visual_novel_description": "尝试写自己的故事。",
   "launch_button": "启动",
   "visual_novel_1": "演示",
-  "visual_novel_1_description": "这只是个演示！"
+  "visual_novel_1_description": "这只是个演示！",
+  "wishlist": "愿望清单",
+  "wishlist_page_title": "愿望清单 - 半条命的网络小屋",
+  "wishlist_title": "我的愿望清单",
+  "wishlist_description": "我希望有一天能得到的东西",
+  "filter_all": "全部",
+  "filter_pending": "待实现",
+  "filter_fulfilled": "已实现",
+  "filter_high_priority": "高优先级",  "stat_total": "总计",
+  "stat_pending": "待实现",
+  "stat_fulfilled": "已实现",
+  "stat_total_price": "总价格",
+  "stat_high_priority": "高优先级",
+  "no_items_found": "未找到项目",
+  "no_items_description": "尝试调整您的筛选条件"
 }
