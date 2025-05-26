@@ -195,7 +195,7 @@
   background: var(--primary-color);
   color: var(--on-primary-color);
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   text-decoration: none;
   font-size: 0.9rem;
   transition: var(--transition);

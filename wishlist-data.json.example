@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "New Graphics Card",
+      "description": "RTX 4080 for better gaming and development performance",
+      "priority": "high",
+      "price": "$1200",
+      "link": "https://example.com/gpu",
+      "added_date": "2025-01-15",
+      "fulfilled": false
+    },
+    {
+      "id": 2,
+      "title": "Mechanical Keyboard",
+      "description": "Cherry MX switches for better coding experience",
+      "priority": "medium",
+      "price": "$150",
+      "link": "https://example.com/keyboard",
+      "added_date": "2025-01-20",
+      "fulfilled": false
+    },
+    {
+      "id": 3,
+      "title": "Programming Books",
+      "description": "Clean Code and Design Patterns books",
+      "priority": "low",
+      "price": "$80",
+      "link": "https://example.com/books",
+      "added_date": "2025-01-25",
+      "fulfilled": true
+    },
+    {
+      "id": 4,
+      "title": "Monitor Arm",
+      "description": "Dual monitor mounting arm for better workspace",
+      "priority": "medium",
+      "price": "$120",
+      "link": "https://example.com/monitor-arm",
+      "added_date": "2025-02-01",
+      "fulfilled": false
+    },
+    {
+      "id": 5,
+      "title": "Coffee Machine",
+      "description": "Espresso machine for late night coding sessions",
+      "priority": "low",
+      "price": "$300",
+      "link": "https://example.com/coffee",
+      "added_date": "2025-02-10",
+      "fulfilled": false
+    },
+    {
+      "id": 6,
+      "title": "4K Monitor",
+      "description": "32-inch 4K monitor for better productivity",
+      "priority": "high",
+      "price": "$500",
+      "link": "https://example.com/monitor",
+      "added_date": "2025-03-01",
+      "fulfilled": false
+    },
+    {
+      "id": 7,
+      "title": "Wireless Headphones",
+      "description": "Noise-cancelling headphones for focus",
+      "priority": "medium",
+      "price": "$250",
+      "link": "https://example.com/headphones",
+      "added_date": "2025-03-15",
+      "fulfilled": true
+    }
+  ]
+}

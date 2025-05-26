@@ -72,8 +72,11 @@
     "filter_high_priority": "高優先級",    "stat_total": "總計",
     "stat_pending": "待實現",
     "stat_fulfilled": "已實現",
-    "stat_total_price": "總價格",
-    "stat_high_priority": "高優先級",
+    "stat_total_price": "總價格",    "stat_high_priority": "高優先級",
     "no_items_found": "未找到項目",
-    "no_items_description": "嘗試調整您的篩選條件"
+    "no_items_description": "嘗試調整您的篩選條件",    "priority_high": "高",
+    "priority_medium": "中",
+    "priority_low": "低",
+    "view_item": "查看",
+    "fulfilled_status": "已完成"
 }

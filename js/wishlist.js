@@ -118,15 +118,12 @@ class WishlistManager {
         }
 
         grid.style.display = 'grid';
-        noItems.style.display = 'none';
-
-        const itemsHtml = filteredItems.map(item => `
+        noItems.style.display = 'none';        const itemsHtml = filteredItems.map(item => `
             <div class="wishlist-item ${item.fulfilled ? 'fulfilled' : ''}">
                 <div class="item-header">
                     <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
-                    <div class="item-status">
-                        <span class="priority-badge priority-${item.priority}">${item.priority}</span>
-                        ${item.fulfilled ? '<span class="fulfilled-badge"><i class="material-icons" style="font-size: 0.8rem;">check</i>Done</span>' : ''}
+                    <div class="item-status">                        <span class="priority-badge priority-${item.priority}" i18n="priority_${item.priority}">${item.priority}</span>
+                        ${item.fulfilled ? '<span class="fulfilled-badge"><i class="material-icons" style="font-size: 0.8rem;">check</i><span i18n="fulfilled_status">Done</span></span>' : ''}
                     </div>
                 </div>
                 <p class="item-description">${this.escapeHtml(item.description)}</p>
@@ -137,13 +134,20 @@ class WishlistManager {
                     <span class="item-date">Added: ${this.formatDate(item.added_date)}</span>
                     ${item.link ? `<a href="${this.escapeHtml(item.link)}" target="_blank" class="item-link">
                         <i class="material-icons" style="font-size: 1rem;">open_in_new</i>
-                        View
+                        <span i18n="view_item">View</span>
                     </a>` : ''}
                 </div>
             </div>
-        `).join('');
-
-        grid.innerHTML = itemsHtml;
+        `).join('');        grid.innerHTML = itemsHtml;
+        
+        // Apply internationalization to newly added elements
+        $("[i18n]").i18n({
+            defaultLang: localStorage.getItem('language') || 'en-US',
+            filePath: "i18n/",
+            filePrefix: "",
+            fileSuffix: "",
+            forever: true
+        });
     }
 
     // Setup event listeners

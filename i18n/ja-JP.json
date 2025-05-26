@@ -74,9 +74,12 @@
   "stat_total": "総アイテム数",
   "stat_pending": "保留中",
   "stat_fulfilled": "達成済み",
-  "stat_total_price": "総価格",
-  "stat_high_priority": "高優先度",
+  "stat_total_price": "総価格",  "stat_high_priority": "高優先度",
   "no_items_found": "アイテムが見つかりません",
-  "no_items_description": "フィルターを調整してみてください"
+  "no_items_description": "フィルターを調整してみてください",  "priority_high": "高",
+  "priority_medium": "中",
+  "priority_low": "低",
+  "view_item": "表示",
+  "fulfilled_status": "達成"
 
 }

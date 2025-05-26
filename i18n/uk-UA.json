@@ -72,8 +72,10 @@
     "stat_pending": "В очікуванні",
     "stat_fulfilled": "Виконано",
     "stat_total_price": "Загальна вартість",
-    "stat_high_priority": "Високий пріоритет",
-    "no_items_found": "Предмети не знайдені",
-    "no_items_description": "Спробуйте змінити фільтри"
-
+    "stat_high_priority": "Високий пріоритет",    "no_items_found": "Предмети не знайдені",
+    "no_items_description": "Спробуйте змінити фільтри",    "priority_high": "Високий",
+    "priority_medium": "Середній",
+    "priority_low": "Низький",
+    "view_item": "Перегляд",
+    "fulfilled_status": "Виконано"
 }

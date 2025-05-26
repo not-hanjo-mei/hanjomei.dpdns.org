@@ -74,9 +74,12 @@
   "filter_high_priority": "High Priority",  "stat_total": "Total Items",
   "stat_pending": "Pending",
   "stat_fulfilled": "Fulfilled",
-  "stat_total_price": "Total Price",
-  "stat_high_priority": "High Priority",
+  "stat_total_price": "Total Price",  "stat_high_priority": "High Priority",
   "no_items_found": "No items found",
-  "no_items_description": "Try adjusting your filters"
+  "no_items_description": "Try adjusting your filters",  "priority_high": "High",
+  "priority_medium": "Medium",
+  "priority_low": "Low",
+  "view_item": "View",
+  "fulfilled_status": "Done"
 
 }

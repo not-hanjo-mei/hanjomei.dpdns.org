@@ -72,8 +72,11 @@
     "stat_pending": "В ожидании",
     "stat_fulfilled": "Выполнено",
     "stat_total_price": "Общая стоимость",
-    "stat_high_priority": "Высокий приоритет",
-    "no_items_found": "Предметы не найдены",
-    "no_items_description": "Попробуйте изменить фильтры"
+    "stat_high_priority": "Высокий приоритет",    "no_items_found": "Предметы не найдены",
+    "no_items_description": "Попробуйте изменить фильтры",    "priority_high": "Высокий",
+    "priority_medium": "Средний",
+    "priority_low": "Низкий",
+    "view_item": "Просмотр",
+    "fulfilled_status": "Готово"
 }
   
