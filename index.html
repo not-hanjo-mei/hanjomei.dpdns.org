@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <title>Hanjo Mei's Cyber Crib</title> -->
-  <title i18n="home_page_title">Hanjo Mei's Cyber Crib</title>  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+  <title i18n="home_page_title">Hanjo Mei's Cyber Crib</title>
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,56 +30,68 @@
           <h2 i18n="welcome_message">Welcome to My Personal Website</h2>
           <p i18n="intro_message">Hi, I'm Hanjo Mei. This is my cyber crib where I share my thoughts, projects, and
             connect with others.</p>
-          <div class="social-links" style="justify-content: flex-start;">
-            <a href="https://twitter.com/not_hanjo_mei" class="social-link" target="_blank"><i
-                class="material-icons">close</i></a>
-            <a href="https://youtube.com/@hanjo_mei_reality" class="social-link" target="_blank"><i
-                class="material-icons">smart_display</i></a>
-            <a href="https://instagram.com/not_hanjo_mei" class="social-link" target="_blank"><i
-                class="material-icons">party_mode</i></a>
-            <a href="https://reality.app/profile/be1378b4" class="social-link" target="_blank"><i
-                class="material-icons">view_in_ar</i></a>
-          </div>
         </div>
         <img src="images/avatar.webp" alt="Hanjo Mei's avatar" class="avatar" style="margin-right: 20px;">
       </div>
     </div>
 
-    <div class="card" id="about">
-      <h2 i18n="about_me">About me</h2>
-      <p i18n="about_me_description">I'm a passionate creator, always exploring new technologies and ideas.</p>
-      <a class="button no-underline" href="about_me.html">
-        <span i18n="about_me_button">About Me</span> <i class="material-icons">arrow_forward</i>
-      </a>
-    </div>
-
-    <div class="card" id="projects">
-      <h2 i18n="recent_projects">Recent Projects</h2>
-      <p i18n="recent_projects_description">Here are some of my recent works and experiments:</p>
-      <ul>
-        <li i18n="project_5">YAH Mei, a friendly REALITY chatbot</li>
-        <li i18n="project_2">Inochi 2D model for live streaming</li>
-        <li i18n="project_4">Visual Novel</li>
-      </ul>
-      <a class="button no-underline" href="projects.html">
-        <span i18n="view_more_projects">View More Projects</span> <i class="material-icons">arrow_forward</i>
-      </a>
-    </div>
-
     <div class="card" id="contact">
       <h2 i18n="get_in_touch">Get in Touch</h2>
       <p i18n="contact_description">Feel free to reach out to me for collaborations or just to say hi!</p>
+
+      <div class="social-links" style="justify-content: flex-start; margin-bottom: 20px;">
+        <a href="https://twitter.com/not_hanjo_mei" class="social-link" target="_blank">
+          <img src="images/icons/x-twitter.svg" alt="X/Twitter" class="social-icon">
+          <span i18n="twitter">X / Twitter</span>
+        </a>
+        <a href="https://youtube.com/@hanjo_mei_reality" class="social-link" target="_blank">
+          <img src="images/icons/youtube.svg" alt="YouTube" class="social-icon">
+          <span i18n="youtube">YouTube</span>
+        </a>
+        <a href="https://instagram.com/not_hanjo_mei" class="social-link" target="_blank">
+          <img src="images/icons/instagram.svg" alt="Instagram" class="social-icon">
+          <span i18n="instagram">Instagram</span>
+        </a>
+        <a href="https://reality.app/profile/be1378b4-5aa0-4534-b0be-2e7084c610e3" class="social-link" target="_blank">
+          <img src="images/icons/reality.svg" alt="REALITY" class="social-icon">
+          <span i18n="reality">REALITY</span>
+        </a>
+        <a href="https://space.bilibili.com/1838177170" class="social-link" target="_blank">
+          <img src="images/icons/bilibili.svg" alt="Bilibili" class="social-icon">
+          <span i18n="bilibili">Bilibili</span>
+        </a> <a href="https://github.com/not-hanjo-mei" class="social-link" target="_blank">
+          <img src="images/icons/github.svg" alt="GitHub" class="social-icon">
+          <span i18n="github">GitHub</span>
+        </a>
+        <a href="mailto:hanjomei@hanjomei.dpdns.org" class="social-link" target="_blank">
+          <i class="material-icons" style="width: 20px; height: 20px; font-size: 20px;">email</i>
+          <span i18n="email_button">Email</span>
+        </a>
+      </div>
+
       <p><i class="material-icons">chat</i> <span i18n="discord">Discord: not_hanjo_mei</span></p>
-      <p><i class="material-icons">photo_camera</i> <span i18n="instagram_dm">Instagram DM: @not_hanjo_mei</span></p>
       <p><i class="material-icons">email</i> <span i18n="email">Email: hanjomei@hanjomei.dpdns.org</span></p>
-      <a class="button no-underline button-spacing" href="https://www.instagram.com/direct/t/111439353583723/"
-        target="_blank">
-        <span i18n="instagram_direct">Instagram Direct</span> <i class="material-icons">send</i>
-      </a>
-      <a class="button no-underline" href="mailto:hanjomei@hanjomei.dpdns.org" target="_blank">
-        <span i18n="email_button">Email</span> <i class="material-icons">send</i>
-      </a>
     </div>
+
+  <div class="card" id="about">
+    <h2 i18n="about_me">About me</h2>
+    <p i18n="about_me_description">I'm a passionate creator, always exploring new technologies and ideas.</p>
+    <a class="button no-underline" href="about_me.html">
+      <span i18n="about_me_button">About Me</span> <i class="material-icons">arrow_forward</i>
+    </a>
+  </div>
+
+  <div class="card" id="projects">
+    <h2 i18n="recent_projects">Recent Projects</h2>
+    <p i18n="recent_projects_description">Here are some of my recent works and experiments:</p>
+    <ul>
+      <li i18n="project_5">YAH Mei, a friendly REALITY chatbot</li>
+      <li i18n="project_2">Inochi 2D model for live streaming</li>
+      <li i18n="project_4">Visual Novel</li>
+    </ul>
+    <a class="button no-underline" href="projects.html">
+      <span i18n="view_more_projects">View More Projects</span> <i class="material-icons">arrow_forward</i>
+    </a>
   </div>
   <div id="floating-button"></div>
 
