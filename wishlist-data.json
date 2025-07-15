@@ -1,12 +1,12 @@
 {
   "items": [
     {
-      "title": "Nvidia Tesla H100 96GB * 4",
-      "description": "4x Nvidia Tesla H100 for AI training and development.\nYou're not that serious, right?",
+      "title": "Nvidia Tesla H200 141GB * 8",
+      "description": "8x Nvidia Tesla H200 for AI training and development.\nYou're not that serious, right?",
       "priority": "low",
-      "price": "$92,000",
-      "link": "https://www.ebay.com/itm/387319342049",
-      "added_date": "2025-05-27",
+      "price": "$410,000",
+      "link": "https://www.jumbo-computer.com/en/products/%E6%9C%80%E6%96%B0%E7%94%A2%E5%93%81-nvidia-h200-nvl-141gb-hbm3-pcie-data-center-gpu-card",
+      "added_date": "2025-05-30",
       "fulfilled": false
     },
     {
