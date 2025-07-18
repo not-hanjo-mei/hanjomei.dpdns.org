@@ -32,9 +32,14 @@
           style="background-color: var(--surface-color); border-radius: 12px; padding: 1rem; box-shadow: var(--elevation-1); transition: var(--transition);">
           <h3 i18n="visual_novel_1">Demo</h3>
           <p i18n="visual_novel_1_description">It's just a demo!</p>
-          <a class="button no-underline" href="visual_novel/demo" target="_blank">
-              <span i18n="launch_button">Launch</span> <i class="material-icons">send</i>
-          </a>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a class="button no-underline" href="visual_novel/demo" target="_blank">
+                <span i18n="launch_button">Launch</span> <i class="material-icons">send</i>
+            </a>
+            <a class="button no-underline" href="https://demo.hanjomei.dpdns.org/" target="_blank" style="background-color: var(--secondary-color);">
+                <span i18n="mirror_vercel_button">Mirror - Vercel</span> <i class="material-icons">open_in_new</i>
+            </a>
+          </div>
         </div>
 
         </div>
