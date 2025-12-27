@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Engine</title>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Google Sans Flex Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..72,400..700&display=swap">
+    
+    <!-- Design Tokens & Layout -->
+    <link rel="stylesheet" href="../css/blog/style.css">
+
+    <!-- KaTeX (Math Rendering) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Theme Initialization (Prevent Flash) -->
+    <script>
+        (function() {
+            const STORAGE_KEY = 'blog_theme';
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const storedTheme = localStorage.getItem(STORAGE_KEY);
+            const isDark = storedTheme === 'dark' || (!storedTheme && systemDark);
+            if (isDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
+    <!-- Third Party Libs (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+
+    <!-- Preload Posts Index -->
+    <link rel="preload" href="posts-index.json" as="fetch" crossorigin>
+</head>
+<body>
+
+    <!-- Persistent Top App Bar -->
+    <header class="top-app-bar">
+        <div class="toolbar-container">
+            <div class="start-actions">
+                <a id="nav-button" href="../index.html" class="md-icon-button" aria-label="Home">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </div>
+            
+            <div class="headline">Blog</div>
+
+            <div class="end-actions" style="display: flex; align-items: center; gap: 8px;">
+                <button id="theme-toggle" class="md-icon-button" aria-label="Toggle Dark Mode">
+                    <span class="material-symbols-outlined theme-icon-light">light_mode</span>
+                    <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
+                </button>
+                <div class="language-menu-wrapper">
+                    <button id="language-button" class="md-icon-button" aria-label="Change language">
+                        <span class="material-symbols-outlined">translate</span>
+                    </button>
+                    <div id="language-menu" class="language-menu" hidden></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app" class="content-container">
+        <div class="loading-spinner"></div>
+    </main>
+
+    <!-- Application Logic -->
+    <script type="module" src="../js/blog/app.js"></script>
+</body>
+</html>

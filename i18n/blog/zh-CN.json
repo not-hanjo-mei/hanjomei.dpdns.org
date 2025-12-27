@@ -1,0 +1,10 @@
+{
+    "no_posts": "没有找到文章。",
+    "fallback_message": "该内容暂无中文版本,为您显示英文原版。",
+    "content_unavailable": "内容不可用(至少在当前语言下)。也许可以尝试切换到其他语言? :P",
+    "read_more": "阅读更多",
+    "back": "返回",
+    "main_site": "主站",
+    "page_title": "半条命的博客",
+    "headline": "半条命的博客"
+}
