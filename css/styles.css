@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Google Sans Flex', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -371,7 +371,7 @@ input:checked+.slider:before {
     height: 36px;
     padding: 0 10px;
     font-size: clamp(0.5rem, 0.8vw, 1rem);
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Google Sans Flex', sans-serif;
     white-space: nowrap; 
     cursor: auto;
     transition: font-size 0.3s ease;

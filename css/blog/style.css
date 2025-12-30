@@ -67,7 +67,7 @@
   /* Layout */
   --app-bar-height: 64px;
   --max-width: 800px;
-    --md-ref-typeface: 'Google Sans Flex', 'Product Sans', sans-serif;
+    --md-ref-typeface: 'Google Sans Flex', 'Google Sans Flex', sans-serif;
 }
 
 /* AMOLED Black Dark Mode Theme (Mapped to data-theme for JS toggle) */
