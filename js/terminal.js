@@ -24,7 +24,7 @@ class Terminal {
           'contact': {
             type: 'dir',
             content: {
-              'social.txt': { type: 'file', content: 'Discord: not_hanjo_mei\nInstagram: @not_hanjo_mei\nYouTube: @hanjo_mei_reality\nREALITY: profile/be1378b4' },
+              'social.txt': { type: 'file', content: 'Discord: not_hanjo_mei\nInstagram: @not_hanjo_mei\nYouTube: @not_hanjo_mei\nREALITY: profile/be1378b4' },
               'email.txt': { type: 'file', content: 'hanjomei@hanjomei.dpdns.org' }
             }
           },
